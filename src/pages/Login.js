@@ -47,6 +47,7 @@ function Login(props) {
           value={values.username}
           error={errors.username ? true : false}
           onChange={onChange}
+          autoFocus
         />
         <Form.Input
           label="Password"
