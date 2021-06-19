@@ -67,9 +67,9 @@ function SinglePost(props) {
         <Grid.Row>
           <Grid.Column width={2}>
             <Image
-              src="https://react.semantic-ui.com/images/avatar/large/molly.png"
-              size="small"
-              float="right"
+              src="https://avatars.githubusercontent.com/u/56427251?s=60&v=4"
+              size='small'
+              float='right'
             />
           </Grid.Column>
           <Grid.Column width={10}>
@@ -82,16 +82,16 @@ function SinglePost(props) {
               <hr />
               <Card.Content extra>
                 <LikeButton user={user} post={{ id, likeCount, likes }} />
-                <MyPopup content="Comment on post">
+                <MyPopup content='Comment on post'>
                   <Button
-                    as="div"
-                    labelPosition="right"
-                    onClick={() => console.log('Comment on post')}
+                    as='div'
+                    labelPosition='right'
+                    onClick={() => console.log("Comment on post")}
                   >
-                    <Button basic color="blue">
-                      <Icon name="comments" />
+                    <Button basic color='blue'>
+                      <Icon name='comments' />
                     </Button>
-                    <Label basic color="blue" pointing="left">
+                    <Label basic color='blue' pointing='left'>
                       {commentCount}
                     </Label>
                   </Button>
@@ -106,19 +106,19 @@ function SinglePost(props) {
                 <Card.Content>
                   <p>Post a comment</p>
                   <Form>
-                    <div className="ui action input fluid">
+                    <div className='ui action input fluid'>
                       <input
-                        type="text"
-                        placeholder="Comment.."
-                        name="comment"
+                        type='text'
+                        placeholder='Comment..'
+                        name='comment'
                         value={comment}
                         onChange={(event) => setComment(event.target.value)}
                         ref={commentInputRef}
                       />
                       <button
-                        type="submit"
-                        className="ui button teal"
-                        disabled={comment.trim() === ''}
+                        type='submit'
+                        className='ui button teal'
+                        disabled={comment.trim() === ""}
                         onClick={submitComment}
                       >
                         Submit
