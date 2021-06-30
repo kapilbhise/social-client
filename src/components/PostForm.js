@@ -40,7 +40,7 @@ function PostForm() {
             error={error ? true : false}
             autoFocus
           />
-          <Button type='submit' color='teal'>
+          <Button type='submit' color='blue'>
             Submit
           </Button>
         </Form.Field>
