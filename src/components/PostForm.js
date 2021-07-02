@@ -29,6 +29,7 @@ function PostForm() {
 
   return (
     <>
+    {/* add form to submit post */}
       <Form onSubmit={onSubmit}>
         <h2>Create a post:</h2>
         <Form.Field>

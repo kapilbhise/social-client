@@ -1,26 +1,28 @@
-import React, { useContext } from 'react';
-import { Button, Card, Icon, Label, Image } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
-import moment from 'moment';
+import React, { useContext } from "react";
+import { Button, Card, Icon, Label, Image } from "semantic-ui-react";
+import { Link } from "react-router-dom";
+import moment from "moment";
 
-import { AuthContext } from '../context/auth';
-import LikeButton from './LikeButton';
-import DeleteButton from './DeleteButton';
-import MyPopup from '../util/MyPopup';
+import { AuthContext } from "../context/auth";
+import LikeButton from "./LikeButton";
+import DeleteButton from "./DeleteButton";
+import MyPopup from "../util/MyPopup";
 
 function PostCard({
-  post: { body, createdAt, id, username, likeCount, commentCount, likes }
+  post: { body, createdAt, id, username, likeCount, commentCount, likes },
 }) {
   const { user } = useContext(AuthContext);
 
   return (
     <Card fluid>
       <Card.Content>
+        {/* add image */}
         <Image
           floated='right'
-          size='mini'
+          size='tiny'
           src='https://avatars.githubusercontent.com/u/56427251?s=60&v=4'
         />
+        {/* add header and other details */}
         <Card.Header>{username}</Card.Header>
         <Card.Meta as={Link} to={`/posts/${id}`}>
           {moment(createdAt).fromNow(true)}
@@ -28,7 +30,9 @@ function PostCard({
         <Card.Description>{body}</Card.Description>
       </Card.Content>
       <Card.Content extra>
+        {/* add like button */}
         <LikeButton user={user} post={{ id, likes, likeCount }} />
+        {/* add comment button */}
         <MyPopup content='Comment on post'>
           <Button labelPosition='right' as={Link} to={`/posts/${id}`}>
             <Button color='blue' basic>
