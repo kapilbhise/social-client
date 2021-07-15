@@ -1,3 +1,12 @@
+# Social!
+A platform where users can share their experience, discuss about different projects they are working on, discuss about different issues and much more
+
+## Demo :
+Link : https://sleepy-goldberg-a3fc5c.netlify.app/
+
+Share your thoughts!, Go Social!
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +75,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+#### references :
+classed youtube videos and
+medium blogs
+
+# Thank You
